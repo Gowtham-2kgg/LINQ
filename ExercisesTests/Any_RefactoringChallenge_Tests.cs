@@ -33,7 +33,7 @@ namespace ExercisesTests
         public void WithLongNames()
         {
             var names = new[] { "Bob", "Martin", "Greggggggggggggggggggggggggggggggggggggggg" };
-            
+
             Assert.False(Any.AreAllNamesValid(names),
                 $"Test failed for names {EnumerableToString(names)}, " +
                 $"because not all of them are are valid. " +
@@ -44,7 +44,7 @@ namespace ExercisesTests
         public void WithValidNamesOnly()
         {
             var names = new[] { "Bob", "Martin", "Greg" };
-           
+
             Assert.True(Any.AreAllNamesValid(names),
                 $"Test failed for names {EnumerableToString(names)}. " +
                 $"They are all valid.");
@@ -54,7 +54,7 @@ namespace ExercisesTests
         public void WithLowerCaseNames_Refactored()
         {
             var names = new[] { "Bob", "martin", "Greg" };
-            
+
             Assert.False(Any.AreAllNamesValid_Refactored(names),
                 $"Test failed for names {EnumerableToString(names)}, " +
                 $"because not all of them are are valid. " +
@@ -65,7 +65,7 @@ namespace ExercisesTests
         public void WithShortNames_Refactored()
         {
             var names = new[] { "Bob", "M", "Greg" };
-            
+
             Assert.False(Any.AreAllNamesValid_Refactored(names),
                 $"Test failed for names {EnumerableToString(names)}, " +
                 $"because not all of them are are valid. " +
@@ -76,7 +76,7 @@ namespace ExercisesTests
         public void WithLongNames_Refactored()
         {
             var names = new[] { "Bob", "Martin", "Greggggggggggggggggggggggggggggggggggggggg" };
-            
+
             Assert.False(Any.AreAllNamesValid_Refactored(names),
                 $"Test failed for names {EnumerableToString(names)}, " +
                 $"because not all of them are are valid. " +
@@ -87,7 +87,7 @@ namespace ExercisesTests
         public void WithValidNamesOnly_Refactored()
         {
             var names = new[] { "Bob", "Martin", "Greg" };
-            
+
             Assert.True(Any.AreAllNamesValid_Refactored(names),
                 $"Test failed for names {EnumerableToString(names)}. " +
                 $"They are all valid.");

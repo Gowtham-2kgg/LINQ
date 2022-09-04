@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using LinqTutorial.MethodSyntax;
 
 namespace LinqTutorial
@@ -8,8 +9,8 @@ namespace LinqTutorial
         static void Main(string[] args)
         {
             //METHOD SYNTAX
-
-            //Any.Run();
+          
+            Any.Run();
             //All.Run();
             //Count.Run();
             //Contains.Run();
